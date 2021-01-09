@@ -242,7 +242,8 @@ height: 27.53px;
 font-family: 'Fira Sans', sans-serif;
 font-style: normal;
 font-weight: normal;
-font-size: 20px;
+font-size: 30px;
+padding-top: 26px;
 line-height: 23px;
 /* or 117% */
 
@@ -270,8 +271,9 @@ color: #FFFFFF;
 }
 .mmm{
     margin: 0cm;
-    padding-left: 134px;
+    padding-left: 120px;
     padding-bottom: 19px;
+    display: inline;
     width: 98.63px;
     height: 24.08px;
     font-family: 'Fira Sans', sans-serif;
@@ -360,3 +362,52 @@ margin-top: 3px;
     display:none;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
     }
+
+
+
+
+
+    .cbb{
+        border: 2px solid #E1E1E1;
+        box-sizing: border-box;
+        border-radius: 4px;
+        height: 40px;
+        width: 85px;
+        background:transparent;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-bottom: 3px;
+        border-bottom-width: 2px;
+        margin-top: 12px;
+        border-top-width: 2px;
+        text-align:center
+        
+        
+        
+        }
+     .cbb:hover{
+        
+        background: #f0a3bf;
+        border: 2px #f0a3bf;
+        
+    }
+   
+
+    .bbd{
+        padding-left: 6px;
+         width: 144px;
+     height: 18px;
+     
+     font-family: 'Fira Sans', sans-serif;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 25px;
+     line-height: 38px;
+     /* or 152% */
+     
+     display: flex;
+     align-items: center;
+     letter-spacing: 0.3px;
+     
+     color: #f0a3bf;
+     }
