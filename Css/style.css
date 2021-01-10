@@ -260,8 +260,7 @@ height: 27.53px;
 font-family: 'Fira Sans', sans-serif;
 font-style: normal;
 font-weight: normal;
-font-size: 30px;
-padding-top: 26px;
+font-size: 20px;
 line-height: 23px;
 /* or 117% */
 
@@ -289,7 +288,7 @@ color: #FFFFFF;
 }
 .mmm{
     margin: 0cm;
-    padding-left: 120px;
+    padding-left: 130px;
     padding-bottom: 19px;
     display: inline;
     width: 98.63px;
