@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery-latest.js" type="text/javascript"></script>
+    <script src="/ddw.js" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+
+   
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    http://freeuk4.listen2myradio.com:14516/currentsong?sid=1
+
+    <script>
+<?php
+	// с кодировкой возможны проблемы, поэтому если вдруг появятся каркозябры, попробуйте добавить следующую строчку кода 
+        header('Content-Type: text/html; charset=windows-1251');
+	
+	// сторонняя страница сайта, с которой будем брать контент. 
+	$content = file_get_contents('http://site.ru/page');
+ 
+	// определяем начало необходимого фрагмента кода, до которого мы удалим весь контент
+	$pos = strpos($content, '<div class="start"><span class="needed-text">');
+ 
+	// удаляем все до нужного фрагмента
+	$content = substr($content, $pos);
+ 
+	// находим конец необходимого фрагмента кода
+	$pos = strpos($content, '</span></div>');
+ 
+	// отрезаем нужное количество символов от конца фрагмента
+	$content = substr($content, 0, $pos);
+ 
+    //если в нужном контенте встречается не нужный кусок текста, то его вырезаем
+    $content = str_replace('текст, который нужно вырезать','', $content); 
+ 
+	// выводим необходимый контент
+	echo $content;
+?>
+    
+    
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+        setInterval("jQuery('#timeA').load('# span#timeB');",3000); // В данном случае автообновление равно 15 секундам. Выставляется значение в миллисекундах. 1 секунда = 1000 миллисекундам
+        });
+        </script>
+        <span id="timeA"><span id="timeB"> 
+
+
+
+    
+
+
+
+        </span></span>
+</body>
+</html>
